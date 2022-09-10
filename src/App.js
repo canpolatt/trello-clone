@@ -1,4 +1,4 @@
-import Logo from './hipporello.jpg';
+import Logo from './assets/hipporello.jpg';
 import './App.scss';
 import TodoBoard from "./components/TodoBoard";
 
@@ -7,7 +7,7 @@ function App() {
         <div className="App">
             <div className="header-wrapper">
                 <img src={Logo} className="logo-wrapper" alt="logo"/>
-                <h1>Hipporello - Trello Project</h1>
+                <h1>Hipporello - Trello Project / Can Polat</h1>
             </div>
             <TodoBoard/>
         </div>

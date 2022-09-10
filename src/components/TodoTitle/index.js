@@ -3,7 +3,8 @@ import {useState} from "react";
 import {useDispatch} from "react-redux";
 import Delete from "../../assets/delete.svg";
 
-const TodoHeader = ({handleChange, inputValues, id, title, setInitialValue}) => {
+
+const TodoTitle = ({handleChange, inputValues, id, title, setInitialValue}) => {
     const [error, setError] = useState(false)
     const dispatch = useDispatch()
     const [showEditListTitle, setShowEditListTitle] = useState(false)
@@ -49,4 +50,4 @@ const TodoHeader = ({handleChange, inputValues, id, title, setInitialValue}) => 
     )
 }
 
-export default TodoHeader
+export default TodoTitle

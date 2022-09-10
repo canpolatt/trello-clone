@@ -8,7 +8,7 @@ const initialState = {
     }
 }
 
-
+// Card işlemleriyle ilgili fonksiyonlar burada bulunmaktadır
 export const cardSlice = createSlice({
     name: 'todo',
     initialState,

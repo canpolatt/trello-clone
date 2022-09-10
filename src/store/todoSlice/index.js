@@ -9,7 +9,7 @@ const initialState = {
     }
 }
 
-
+// Liste işlemleriyle ilgili fonksiyonlar burada bulunmaktadır
 export const todoSlice = createSlice({
     name: 'todo',
     initialState,

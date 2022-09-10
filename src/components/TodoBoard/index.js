@@ -6,7 +6,8 @@ import {useDispatch, useSelector} from 'react-redux'
 import {DragDropContext, Droppable} from 'react-beautiful-dnd'
 import {addList, moveItem} from "../../store/todoSlice";
 import Task from "../Task";
-import TodoHeader from "../TodoHeader";
+import TodoTitle from "../TodoTitle";
+
 
 const TodoBoard = () => {
     const [showAddListButton, setShowAddListButton] = useState(true)
@@ -60,7 +61,7 @@ const TodoBoard = () => {
                                     className='kanban__section'
                                     ref={provided.innerRef}
                                 >
-                                    <TodoHeader inputValues={inputValues} handleChange={handleChange}
+                                    <TodoTitle inputValues={inputValues} handleChange={handleChange}
                                                 id={todoList[section].id} title={todoList[section].title} setInitialValue={setInitialValue}/>
                                     <Task data={todoList[section].cards.map(cardID => taskList[cardID])}
                                           sectionId={todoList[section].id}
