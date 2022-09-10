@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+// Reset
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+}
+
+.header-wrapper{
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  color: #02155F;
+  justify-content: center;
+  .logo-wrapper{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.hipporello-btn{
+  color: #43B8FB;
+  background: #E4F6FF;
+  border: 1px solid #43B8FB;
+  padding: 5px 10px;
+  border-radius: 8px;
+  &:hover{
+    cursor:pointer;
+    background: #43B8FB;
+    color: #E4F6FF;
+  }
+}
+
+.hipporello-input{
+  border: 1px solid #43B8FB;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+}
