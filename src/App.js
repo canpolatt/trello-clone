@@ -7,7 +7,7 @@ function App() {
         <div className="App">
             <div className="header-wrapper">
                 <img src={Logo} className="logo-wrapper" alt="logo"/>
-                <h1>Hipporello - Trello Project / Can Polat</h1>
+                <h1>Hipporello - Trello Clone Project / Can Polat</h1>
             </div>
             <TodoBoard/>
         </div>

@@ -4,7 +4,7 @@ import {useDispatch} from "react-redux";
 import Delete from "../../assets/delete.svg";
 
 
-const TodoTitle = ({handleChange, inputValues, id, title, setInitialValue}) => {
+const Title = ({handleChange, inputValues, id, title, setInitialValue}) => {
     const [error, setError] = useState(false)
     const dispatch = useDispatch()
     const [showEditListTitle, setShowEditListTitle] = useState(false)
@@ -40,7 +40,7 @@ const TodoTitle = ({handleChange, inputValues, id, title, setInitialValue}) => {
                         }>Close
                         </button>
                     </div>
-                </div> : <div  onClick={() => {
+                </div> : <div onClick={() => {
                     setInitialValue(title)
                     setShowEditListTitle(!showEditListTitle)
                 }}>{title}</div>}
@@ -50,4 +50,4 @@ const TodoTitle = ({handleChange, inputValues, id, title, setInitialValue}) => {
     )
 }
 
-export default TodoTitle
+export default Title
